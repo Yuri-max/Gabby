@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head><title> 안녕하세요 </title>
+ <meta charset="utf-8"> 
+<div style="padding-left:16px">
+<h1> 나를 소개합니다 :) </h1>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="application.html">지원동기</a>
+  <a href="career.html">경력</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">창작활동
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="self.html">개인창작</a>
+    <a href="group.html">그룹창작</a>
+  </div>
+  </div> 
+</div>
+
+<div style="float: right;">
+<br><br>
+<img class="fit-picture"
+     src="https://blogfiles.pstatic.net/MjAyMDA4MjBfNDEg/MDAxNTk3OTMxMDg2NzM5.mFYIat0z03JuZOPABz_sbQxJhA1aK1vs9WNWOG4jdyUg.brSkenfPbQrdu8W-bjDYUkOlwyG0vw6zjavI3yKa3i0g.JPEG.yuri9809/me.jpg"
+     alt="캐릭터" width="500">
+</div>
+
+<div style="padding-left:50px">
+<br><br>
+  <h2> 현재 서울대학교 동양사학과 4학년에 재학중인 손유리입니다.  </h2>
+  <h3> 아동가족학과를 복수 전공하고 있습니다. </h3>
+  <h4> 미술 전공은 아니지만 다양한 그림 창작 활동을 하고 있습니다. </h4>
+<br>
+  <h4> 연락처 
+<ul>
+<li>핸드폰: 010-9369-1460</li>
+<li>이메일: yuri9809@snu.ac.kr</li>
+</ul></h4>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
