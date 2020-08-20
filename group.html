@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head><title> 안녕하세요 </title> 
+<meta charset="utf-8"> 
+<div style="padding-left:16px">
+<h1> 나를 소개합니다 :) </h1>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="application.html">지원동기</a>
+  <a href="career.html">경력</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">창작활동
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="self.html">개인창작</a>
+    <a href="group.html">그룹창작</a>
+  </div>
+  </div> 
+</div>
+
+<div style="padding-left:40px">
+<br><br>
+<div style="width:40%; float:left;">
+<ul>
+<li>웹툰 '몽환'->
+<font color="blue"><a href="dream.html">풀버전 보기</a></font>
+</li>
+<img class="fit-picture"
+     src="https://blogfiles.pstatic.net/MjAyMDA4MjBfMjA5/MDAxNTk3OTMxNDY5NTIx.OvZFvDkIIKDwps11ZoMYiszikxpTZ4jFMS5KwP6ZENkg.Ltpb4DqMMVKw74W4VmnPnnOfMziudncVnkSfRrTUO_Eg.PNG.yuri9809/7.png"
+     alt="웹툰 몽환" width="300" height="1000">
+</ul></div>
+
+<div style="width:60%; float:right;">
+<ul><li>웹툰 '팽칠씨의 물절약기'->
+<font color="blue"><a href="https://m.bboom.naver.com/board/get.nhn?boardNo=9&postNo=2541253">시리즈 보기</a></font>
+</li>
+<img class="fit-picture"
+     src="http://social.phinf.naver.net/20171213_3/1513124312306woKvq_PNG/4_1.png"
+     alt="웹툰 팽칠씨의 물절약기" width="300" height="1000">
+</ul></div></div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
