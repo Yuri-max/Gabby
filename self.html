@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head><title> 안녕하세요 </title>
+ <meta charset="utf-8"> 
+<div style="padding-left:16px">
+<h1> 나를 소개합니다 :) </h1>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="application.html">지원동기</a>
+  <a href="career.html">경력</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">창작활동
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="self.html">개인창작</a>
+    <a href="group.html">그룹창작</a>
+  </div>
+  </div> 
+</div>
+
+<div style="padding-left:16px">
+
+<div style="width:50%; float:left;">
+<br>
+<table border>
+<tr>
+<th colspan="2">포토샵</th></tr>
+<tr>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfMTA2/MDAxNTk3OTMxNzIxNTA2.iEJ84aLMkL78cXD95UPAj4HRqSJJqBrfNJuVHGaaZQ4g.XeTvCSzGyepSjSb_uVtfKG-LtseoS10Z42mi-R9Niwcg.PNG.yuri9809/head.png" width="300" height="300">
+</td>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfMjYy/MDAxNTk3OTMxNzE0OTI4.VO_-BvZnfYDhtuJCb6hDsIIkVyP82M-RvVDftNuuxPEg.MLWuEPx6HUnn91Fywav1ggbiA4TF3VH-zoH8ktOZDHog.JPEG.yuri9809/cat.jpg" width="300" height="300"></td>
+</tr>
+<tr>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfMjU2/MDAxNTk3OTMxNzA4ODU4.x9gMy5rcjJ_vhiomtp9NFDme1c8y-KHZcAQAPyGUkw0g.TGppgFdML_aJpig3skv381fIlCdVAwYMyH0PFaFMMCYg.PNG.yuri9809/card_news.png" width="300" height="300"></td>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfNjIg/MDAxNTk3OTMxNzI4OTc3.DQa7AKVWVoo7KVKE5xc8_0xcS4b9jfi55yXmJbvtLdQg.5NVwUAflnZK5ZfxtruaWU_2eAnZochGIHWevkJsfzhMg.PNG.yuri9809/thumbnail.png" width="320" height="200"></td>
+</tr>
+</table>
+</div>
+
+<div style="width:50%; float:right;">
+<br>
+<table border>
+<tr>
+<th colspan="2">그림판3d</th></tr>
+<tr>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfMjQ1/MDAxNTk3OTMxNzM1NTM4.DStWKqQAQrCLuvbvMDeRe8POf6dlObEoApuesYiFqbcg.SLaFujYinxc0MZbnO6FTvHzM66tdcF6zu_1tH6ad5fgg.PNG.yuri9809/egg.png" width="300" height="300">
+</td>
+<td><img src="https://blogfiles.pstatic.net/MjAyMDA4MjBfNzUg/MDAxNTk3OTMxNzQyMDY5.tK66XkIjb7JSap0oSdkE0ByEmnM8deRudtDUQz1eBB8g.vBcIXUIei8gZi5B2XUVNaXo3f9HowBTka8LkxsSlIj8g.PNG.yuri9809/poster.png" width="300" height="300"></td>
+</tr>
+</table>
+</div>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
