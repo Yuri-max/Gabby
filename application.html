@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+
+<head><title> 안녕하세요 </title>
+ <meta charset="utf-8"> 
+<div style="padding-left:16px">
+<h1> 나를 소개합니다 :) </h1>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="application.html">지원동기</a>
+  <a href="career.html">경력</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">창작활동
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="self.html">개인창작</a>
+    <a href="group.html">그룹창작</a>
+  </div>
+  </div> 
+</div>
+
+<style>
+.a {text-indent: 2em;}
+.b {text-indent: 2em;}
+.c {text-indent: 2em;}
+</style>
+
+<br>
+<br>
+<div style="padding: 0px 90px 0px 16px; width: 50%;">
+<p class="a"> 
+ 학교에서 복수전공 수업으로 ‘특수아동의 이해’를 수강하게 됐는데, 그 수업을 계기로 장애에 대한 저의 편견을 깨달았고, 비장애인의 시각이 아닌 장애인의 시각에서 장애란 무엇인지에 대해서도 배울 수 있었습니다. 예를 들어 ‘수화’라고 보편적으로 불리는 농인의 언어는 하나의 언어로써 ‘수어’라는 표현이 적절하다는 것을 알게 됐고, ‘농인’들이 ‘농문화’라는 그들만의 문화와 정체성을 형성한다는 것을 새롭게 알게 돼 
+<font color="blue">장애란 극복의 대상이 아니라는 것을 배웠습니다. </font>
+</p><p class="b">
+수업에서 배운 내용은 저라는 개인의 인식을 변화시키기엔 충분했지만, <font color="blue">여전히 많은 사람이 장애인에 대한 편견을 갖고 있고, 장애 감수성이 부족하다는 사실이 마음이 아팠습니다. </font>특히 코로나19 대응 관련 모범국이라 불리는 대한민국이 정작 정부에서 장애인에 관한 매뉴얼을 최근에서야 마련하고, 중증장애인이 활동지원사 없이 자가격리돼 어려움을 겪는 등 장애인들이 재난의 상황에서 심각한 차별을 겪는 실태에 충격을 받았습니다. 
+</p><p class="c">
+저는 이 수업을 들은 후 주변 사람들에게 장애인에 대한 올바른 인식을 알리는 데 노력했고, 틀림이 아닌 다름이 이해되고 존중받는 사회가 만들어지는 데 이바지하고 싶다는 꿈을 꾸게 됐습니다. 때마침 한국장애인재단에서 허브메신저를 모집하는 것을 알게 됐고, 이번 기회를 통해 <font color="blue">더 많은 사람에게 장애인에 대한 올바른 인식을 갖게 하는 좋은 콘텐츠를 제작하고 싶어 지원하게 됐습니다. </font> </h3>
+</p>
+</div>  
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>
+
+
